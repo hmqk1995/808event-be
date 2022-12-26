@@ -12,14 +12,31 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "eventname": {
+    "EventName": {
       "type": "string"
     },
-    "description": {
+    "Description": {
       "type": "richtext"
     },
-    "location": {
+    "Location": {
       "type": "string"
+    },
+    "Island": {
+      "type": "enumeration",
+      "enum": [
+        "Kauaʻi",
+        "Oʻahu",
+        "Molokaʻi",
+        "Lānaʻi",
+        "Maui",
+        "Hawaiʻi (The Big Island)"
+      ]
+    },
+    "StartDateTime": {
+      "type": "datetime"
+    },
+    "EndDateTime": {
+      "type": "datetime"
     }
   }
 }
