@@ -19,7 +19,6 @@ import {
   IntegerAttribute,
   DecimalAttribute,
   SetMinMax,
-  ComponentSchema,
 } from '@strapi/strapi';
 
 export interface AdminPermission extends CollectionTypeSchema {
@@ -640,25 +639,6 @@ export interface PluginUsersPermissionsUser extends CollectionTypeSchema {
   };
 }
 
-export interface HelloComponent extends ComponentSchema {
-  info: {
-    displayName: 'component';
-    icon: 'archway';
-    description: '';
-  };
-  attributes: {};
-}
-
-export interface Hello2Component2 extends ComponentSchema {
-  info: {
-    displayName: 'component2';
-    icon: 'arrow-circle-right';
-  };
-  attributes: {
-    test: StringAttribute;
-  };
-}
-
 declare global {
   namespace Strapi {
     interface Schemas {
@@ -674,8 +654,6 @@ declare global {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
-      'hello.component': HelloComponent;
-      'hello2.component2': Hello2Component2;
     }
   }
 }
