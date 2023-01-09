@@ -13,13 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "EventName": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
-    "Location": {
-      "type": "string"
+    "Address": {
+      "type": "string",
+      "required": true
     },
     "Island": {
       "type": "enumeration",
@@ -37,6 +40,33 @@
     },
     "EndDateTime": {
       "type": "datetime"
+    },
+    "Lng": {
+      "type": "float"
+    },
+    "Lat": {
+      "type": "float"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "RepeatedEvent": {
+      "type": "boolean"
+    },
+    "Day": {
+      "type": "enumeration",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "PointOfContact": {
+      "type": "string"
     }
   }
 }
