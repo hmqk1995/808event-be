@@ -67,6 +67,13 @@
     },
     "PointOfContact": {
       "type": "string"
+    },
+    "CoverPicture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
