@@ -1,5 +1,4 @@
 export default {
-  //
   graphql: {
     config: {
       endpoint: '/graphql',
@@ -12,4 +11,5 @@ export default {
       },
     },
   },
+  ckeditor: true,
 };

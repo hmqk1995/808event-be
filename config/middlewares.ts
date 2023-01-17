@@ -1,15 +1,6 @@
 export default [
   'strapi::errors',
-  {
-    name: 'strapi::security',
-    config: {
-      contentSecurityPolicy: {
-        directives: {
-          'img-src': ['*'],
-        },
-      }
-    },
-  },
+  'strapi::security',
   {
     name: 'strapi::cors',
     config: {
