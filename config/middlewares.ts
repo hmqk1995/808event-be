@@ -1,6 +1,31 @@
-export default [
+module.exports = ({ env }) => [
   'strapi::errors',
-  'strapi::security',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'connect-src': ["'self'", 'https:'],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            '*.digitaloceanspaces.com',
+          ],
+          'media-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            '*.digitaloceanspaces.com',
+          ],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
   {
     name: 'strapi::cors',
     config: {

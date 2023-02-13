@@ -16,11 +16,11 @@ module.exports = ({ env }) => ({
     config: {
       provider: 'aws-s3',
       providerOptions: {
-        accessKeyId: env('S3_ACCESS_KEY_ID', 'DO003QBBUGVHADFRAHAG'),
-        secretAccessKey: env('S3_ACCESS_SECRET', 'd/9tIN67jgm5C9BoABDFm9+c11zZ7YvciEvDTPepJvo'),
-        region: env('S3_REGION', 'us-east-1'),
+        accessKeyId: env('DO_SPACE_ACCESS_KEY'),
+        secretAccessKey: env('DO_SPACE_SECRET_KEY'),
+        endpoint: env('DO_SPACE_ENDPOINT'),
         params: {
-          Bucket: env('S3_BUCKET', '808event-uploads'),
+          Bucket: env('DO_SPACE_BUCKET'),
         },
       },
       actionOptions: {
