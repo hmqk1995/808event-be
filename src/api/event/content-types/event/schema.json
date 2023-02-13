@@ -62,18 +62,20 @@
         "Thursday",
         "Friday",
         "Saturday",
-        "Sunday"
+        "Sunday",
+        "Day"
       ]
     },
     "PointOfContact": {
       "type": "string"
     },
     "CoverPicture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
