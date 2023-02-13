@@ -13,6 +13,8 @@ export default [
         'http://127.0.0.1:1337',
         'http://192.168.8.124:3000',
         'http://kun.dev:3000',
+        'https://808event.com',
+        'https://www.808event.com',
       ],
     }
   },
