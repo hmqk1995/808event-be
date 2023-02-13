@@ -15,6 +15,7 @@ export default [
         'http://kun.dev:3000',
         'https://808event.com',
         'https://www.808event.com',
+        'https://api.808event.com',
       ],
     }
   },
